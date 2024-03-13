@@ -19,3 +19,13 @@
 main img {
   float: right;
 }
+
+/* Applying position property to the aside element */
+aside {
+  position: relative;
+}
+
+/* Applying position property to the h2 element inside the aside element */
+aside h2 {
+  position: absolute;
+}
