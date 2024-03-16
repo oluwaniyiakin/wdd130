@@ -1,4 +1,4 @@
-/* Importing Google Fonts */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Root Variables */
@@ -22,44 +22,26 @@ body {
   color: var(--text-color);
 }
 
-h1, h2 {
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: #fff;
+p {
+  color: var(--text-color);
 }
 
-header img {
-  height: 50px; /* Adjust height as needed */
-}
-
-nav {
-  display: flex;
-}
-
-nav a {
-  color: #fff;
+/* Social Media Links */
+.sociallinks a {
   text-decoration: none;
-  margin-right: 20px;
 }
 
-/* Main Content */
-main {
-  padding: 20px;
-}
-
+/* Hero Container */
 .hero {
   position: relative;
 }
 
 .hero img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -69,7 +51,6 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
 }
 
 .hero article {
@@ -86,21 +67,8 @@ main {
   margin-left: 20px;
 }
 
-/* Sections */
-section {
-  margin-top: 40px;
-}
-
-h2 {
-  color: var(--primary-color);
-}
-
-/* Social Links */
-.sociallinks {
-  margin-top: 20px;
-}
-
-.sociallinks a {
-  text-decoration: none; /* Remove underline */
-  margin-right: 10px;
+/* Limiting Page Width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
