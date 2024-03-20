@@ -30,7 +30,12 @@ aside h2 {
   position: absolute;
 }
 
-/* Styling for navigation links */
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Styling the navigation links */
 nav {
   background-color: steelblue;
   padding: 1rem;
@@ -48,12 +53,12 @@ nav a {
   color: #fff;
 }
 
-/* Styling for heading */
+/* Adding bottom border to h1 */
 h1 {
   border-bottom: 1px solid #333;
 }
 
-/* Styling for grid layout */
+/* Styling the grid layout */
 .grid {
   display: grid;
   align-items: center;
@@ -69,10 +74,4 @@ aside {
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
-}
-
-/* Styling for header and footer */
-header, footer {
-  max-width: 840px;
-  margin: 0 auto;
 }
