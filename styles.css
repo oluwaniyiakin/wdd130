@@ -30,9 +30,22 @@ aside h2 {
   position: absolute;
 }
 
-header, footer, .grid {
-  max-width: 840px;
-  margin: 0 auto;
+/* Styling the grid layout */
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 /* Styling the navigation links */
@@ -58,20 +71,8 @@ h1 {
   border-bottom: 1px solid #333;
 }
 
-/* Styling the grid layout */
-.grid {
-  display: grid;
-  align-items: center;
-}
-
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-}
-
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+/* Limiting width and centering header, footer, and .grid */
+header, footer, .grid {
+  margin: 0 auto;
+  max-width: 840px;
 }
